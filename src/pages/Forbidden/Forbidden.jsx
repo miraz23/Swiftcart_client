@@ -5,7 +5,7 @@ export default function Forbidden() {
   return (
     <>
       <Helmet>
-        <title>Cardio Vision | 403 Forbidden</title>
+        <title>Swift Cart | 403 Forbidden</title>
       </Helmet>
       <div>Forbidden</div>
     </>

@@ -1,7 +1,7 @@
 import React from 'react';
 import useAuth from '../../hooks/useAuth/useAuth';
 import useUserRole from '../../hooks/useUserRole/useUserRole';
-import Loader from '../../components/shared/Loader/Loader';
+import Loader from '../../components/Shared/Loader/Loader';
 import { Navigate } from 'react-router';
 
 const PatientRoutes = ({children}) => {

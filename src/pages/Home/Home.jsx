@@ -7,7 +7,7 @@ const Home = () => {
       <Helmet>
         <title>Swift Cart | Home</title>
       </Helmet>
-      <div>Home</div>
+      <div></div>
     </>
   )
 }
