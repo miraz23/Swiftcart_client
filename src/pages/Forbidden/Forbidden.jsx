@@ -1,15 +1,13 @@
 import React from 'react'
 import { Helmet } from "react-helmet-async";
 
-const Home = () => {
+export default function Forbidden() {
   return (
     <>
       <Helmet>
-        <title>Swift Cart | Home</title>
+        <title>Cardio Vision | 403 Forbidden</title>
       </Helmet>
-      <div>Home</div>
+      <div>Forbidden</div>
     </>
   )
 }
-
-export default Home
