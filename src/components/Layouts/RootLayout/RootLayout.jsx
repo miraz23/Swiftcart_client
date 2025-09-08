@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet, useNavigation } from 'react-router';
 import Nav from '../../Shared/Header/index.jsx';
 import Loader from '../../Shared/Loader/Loader';
+import Footer from '../../Footer/Footer';
 
 const RootLayout = () => {
 
@@ -18,10 +19,10 @@ const RootLayout = () => {
                     state === 'loading' ? <Loader></Loader> : <Outlet></Outlet>
                 }
             </main>
-{/* 
+
             <footer>
                 <Footer></Footer>
-            </footer>    */}
+            </footer>   
         </div>
     );
 };
