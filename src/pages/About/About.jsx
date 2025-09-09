@@ -5,7 +5,7 @@ import aboutImg from '../../assets/about.png';
 
 const AboutPage = () => {
   useEffect(() => {
-    document.title = 'SwiftCart | About';
+    document.title = 'Swift Cart | About';
   }, []);
 
   return (

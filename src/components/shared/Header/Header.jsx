@@ -25,19 +25,15 @@ const Header = () => {
           </button>
         </div>
         <ul className='nav-links'>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/products'>Products</Link>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/about'>About</Link></li>
+          <li><Link to='/products'>Products</Link></li>
           
           {currentUser && (
-            <li>
-              <Link to='/checkout'>checkout</Link>
-            </li>
+            <li><Link to='/checkout'>checkout</Link></li>
           )}
           {currentUser && (
-            <li>
-              <Link to='/orders'>orders</Link>
-            </li>
+            <li><Link to='/orders'>orders</Link></li>
           )}
         </ul>
         <CartButtons />
