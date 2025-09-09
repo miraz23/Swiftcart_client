@@ -4,7 +4,7 @@ import Home from '../pages/Home/Home'
 import Login from '../pages/Login/Login'
 import Register from '../pages/Register/Register'
 import NotFound from '../pages/NotFound/NotFound'
-import RootLayout from '../components/Layouts/RootLayout/RootLayout'
+import RootLayout from '../layouts/RootLayout/RootLayout'
 import About from '../pages/About/About'
 
 export const router = createBrowserRouter([

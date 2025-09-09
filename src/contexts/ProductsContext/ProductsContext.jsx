@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useContext, useEffect, useReducer } from 'react';
-import reducer from '../../components/reducers/ProductsReducer';
-import { products_url as url } from '../../components/actions/ProductActions';
+import reducer from '../../reducers/ProductsReducer';
+import { products_url as url } from '../../actions/ProductActions';
 import {
   SIDEBAR_OPEN,
   SIDEBAR_CLOSE,
@@ -14,7 +14,7 @@ import {
   GET_SINGLE_PRODUCT_REVIEWS_BEGIN,
   GET_SINGLE_PRODUCT_REVIEWS_ERROR,
   GET_SINGLE_PRODUCT_REVIEWS_SUCCESS,
-} from '../../components/constants/ProductConstants';
+} from '../../constants/ProductConstants';
 import { AuthContext } from '../AuthContext/AuthContext';
 
 const initialState = {

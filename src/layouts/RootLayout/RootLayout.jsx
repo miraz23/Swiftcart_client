@@ -1,8 +1,8 @@
 import React from 'react';
 import { Outlet, useNavigation } from 'react-router';
-import Nav from '../../Shared/Header/index.jsx';
-import Loader from '../../Shared/Loader/Loader';
-import Footer from '../../Footer/Footer';
+import Header from '../../components/Shared/Header/Header';
+import Loader from '../../components/Shared/Loader/Loader';
+import Footer from '../../components/Shared/Footer/Footer';
 
 const RootLayout = () => {
 
@@ -11,7 +11,7 @@ const RootLayout = () => {
     return (
         <div>
             <header>
-                <Nav></Nav>
+                <Header></Header>
             </header>
 
             <main>

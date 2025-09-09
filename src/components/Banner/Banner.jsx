@@ -12,9 +12,9 @@ const Banner = () => {
             all in one place
         </h1>
         <p>
-            SwiftCart is an e-commerce platform which sells wide variety of
+            SwiftCart is an e-commerce platform which sells wide variety of fashion
             essentials. It is a one-stop destination for all your
-            essentials needs.
+            fashion needs.
         </p>
         <Link to='/products' className='btn'>
           shop now

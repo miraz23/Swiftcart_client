@@ -1,12 +1,12 @@
 import React, { useEffect, useContext, useReducer } from 'react';
-import reducer from '../../components/reducers/CartReducer';
+import reducer from '../../reducers/CartReducer';
 import {
   ADD_TO_CART,
   REMOVE_CART_ITEM,
   TOGGLE_CART_ITEM_AMOUNT,
   CLEAR_CART,
   COUNT_CART_TOTALS,
-} from '../../components/constants/CartConstants';
+} from '../../constants/CartConstants';
 
 const getLocalStorage = () => {
   let cart = localStorage.getItem('cart');
