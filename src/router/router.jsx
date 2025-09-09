@@ -5,6 +5,7 @@ import Login from '../pages/Login/Login'
 import Register from '../pages/Register/Register'
 import NotFound from '../pages/NotFound/NotFound'
 import RootLayout from '../components/Layouts/RootLayout/RootLayout'
+import About from '../pages/About/About'
 
 export const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
             {
                 path: "register",
                 Component: Register
+            },
+            {
+              path: "about",
+              Component: About
             }
         ]
     }
