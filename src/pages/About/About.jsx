@@ -3,7 +3,7 @@ import Wrapper from './styles';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import aboutImg from '../../assets/about.png';
 
-const AboutPage = () => {
+const About = () => {
   useEffect(() => {
     document.title = 'Swift Cart | About';
   }, []);
@@ -31,4 +31,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default About;

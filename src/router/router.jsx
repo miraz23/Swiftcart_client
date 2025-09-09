@@ -6,6 +6,7 @@ import Register from '../pages/Register/Register'
 import NotFound from '../pages/NotFound/NotFound'
 import RootLayout from '../layouts/RootLayout/RootLayout'
 import About from '../pages/About/About'
+import Cart from '../pages/Cart/Cart'
 
 export const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
             {
               path: "about",
               Component: About
+            },
+            {
+              path: "cart",
+              Component: Cart
             }
         ]
     }
