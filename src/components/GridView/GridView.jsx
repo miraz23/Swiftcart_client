@@ -1,6 +1,6 @@
 import React from 'react';
 import Wrapper from './styles';
-import Product from '../Product/';
+import Product from '../Product/Product';
 
 const GridView = ({ products }) => {
   return (

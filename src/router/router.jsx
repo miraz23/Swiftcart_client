@@ -7,6 +7,7 @@ import NotFound from '../pages/NotFound/NotFound'
 import RootLayout from '../layouts/RootLayout/RootLayout'
 import About from '../pages/About/About'
 import Cart from '../pages/Cart/Cart'
+import Products from '../pages/Products/Products'
 
 export const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
             {
                 path: "register",
                 Component: Register
+            },
+            {
+              path: "products",
+              Component: Products
             },
             {
               path: "about",
