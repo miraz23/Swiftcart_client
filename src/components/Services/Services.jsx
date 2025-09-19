@@ -4,7 +4,7 @@ import { GiCompass, GiDiamondHard, GiStabbedNote } from 'react-icons/gi';
 
 const Services = () => {
   return (
-    <Wrapper className='sc'>
+    <Wrapper>
       <div className='section-center'>
         <article className='header'>
           <h3>

@@ -17,7 +17,7 @@ const Contact = () => {
   }, [state]);
 
   return (
-    <Wrapper className='sc'>
+    <Wrapper>
       <div className='section-center'>
         <h3>What did you think of us?</h3>
         <div className='content'>

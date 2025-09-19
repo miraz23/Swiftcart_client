@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Banner from '../../components/Banner/Banner';
 import Services from '../../components/Services/Services';
 import Contact from '../../components/Contact/Contact';
+import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts';
 
 const Home = () => {
   return (
@@ -10,8 +11,9 @@ const Home = () => {
       <Helmet>
         <title>Swift Cart | Home</title>
       </Helmet>
-      <div>
-        <Banner />
+      <Banner />
+      <div className='sc'>
+        <FeaturedProducts />
         <Services />
         <Contact />
       </div>
