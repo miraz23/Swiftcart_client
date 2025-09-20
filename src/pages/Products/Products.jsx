@@ -3,7 +3,7 @@ import Wrapper from './styles';
 import Filters from '../../components/Filters/Filters';
 import ProductList from '../../components/ProductList/ProductList';
 import Sort from '../../components/Sort/Sort';
-import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
+import Breadcrumbs from '../../components/Shared/Breadcrumbs/Breadcrumbs';
 
 const Products = () => {
   useEffect(() => {

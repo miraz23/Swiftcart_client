@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Wrapper from './styles';
-import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
+import Breadcrumbs from '../../components/Shared/Breadcrumbs/Breadcrumbs';
 import aboutImg from '../../assets/about.png';
 
 const About = () => {

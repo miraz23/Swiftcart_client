@@ -6,6 +6,7 @@ import AuthProvider from "./contexts/AuthProvider/AuthProvider"
 import { ProductsProvider } from "./contexts/ProductsContext/ProductsContext"
 import { CartProvider } from "./contexts/CartContext/CartContext"
 import { FilterProvider } from "./contexts/FilterContext/FilterContext"
+import { OrderProvider } from "./contexts/OrderContext/OrderContext"
 import { ToastContainer, Bounce } from 'react-toastify'
 import { router } from './router/router.jsx'
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')).render(
           <ProductsProvider> {/* Provides the products context to the application */}
           <FilterProvider> {/* Provides the filter context to the application */}
           <CartProvider> {/* Provides the cart context to the application */}
+          <OrderProvider> {/* Provides the order context to the application */}
           <ToastContainer 
             position="top-right"
             autoclose={3000}
@@ -35,6 +37,7 @@ createRoot(document.getElementById('root')).render(
             transition={Bounce}
           />
           <RouterProvider router={router}/> {/* Provides the router to the application */}
+          </OrderProvider>
           </CartProvider>
           </FilterProvider>
           </ProductsProvider>

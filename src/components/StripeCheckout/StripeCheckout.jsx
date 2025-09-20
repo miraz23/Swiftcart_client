@@ -11,11 +11,11 @@ import axios from 'axios';
 import { useCartContext } from '../../contexts/CartContext/CartContext';
 import useAuth from '../../hooks/useAuth/useAuth';
 import { useOrderContext } from '../../contexts/OrderContext/OrderContext';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { payment_url as url } from '../../actions/OrderActions';
 
-const promise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
+const promise = loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY);
 
 const formatPrice = (number) => {
   const newNumber = Intl.NumberFormat('en-US', {
@@ -29,7 +29,7 @@ const CheckoutForm = () => {
   const { cart, total_amount, shipping_fee, clearCart } = useCartContext();
   const { shipping, placeOrder } = useOrderContext();
   const { user: currentUser } = useAuth();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   // STRIPE STUFF
   const [succeeded, setSucceeded] = useState(false);
@@ -100,7 +100,7 @@ const CheckoutForm = () => {
       await placeOrder();
       setTimeout(() => {
         clearCart();
-        history.push('/orders');
+        navigate('/orders');
       }, 5000);
     }
   };

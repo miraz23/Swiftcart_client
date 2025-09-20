@@ -10,6 +10,8 @@ import RootLayout from '../layouts/RootLayout/RootLayout'
 import About from '../pages/About/About'
 import Cart from '../pages/Cart/Cart'
 import Products from '../pages/Products/Products'
+import Checkout from '../pages/Checkout/Checkout'
+import Orders from '../pages/Orders/Orders'
 
 export const router = createBrowserRouter([
     {
@@ -48,6 +50,14 @@ export const router = createBrowserRouter([
             {
               path: "cart",
               Component: Cart
+            },
+            {
+              path: "checkout",
+              Component: Checkout
+            },
+            {
+              path: "orders",
+              Component: Orders
             }
         ]
     }

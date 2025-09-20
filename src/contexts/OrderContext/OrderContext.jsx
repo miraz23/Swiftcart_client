@@ -1,12 +1,12 @@
 import React, { useEffect, useContext, useReducer } from 'react';
-import OrderReducer from '../reducers/OrderReducer';
+import OrderReducer from '../../reducers/OrderReducer';
 import {
   UPDATE_SHIPPING_DETAILS,
   GET_ORDERS_BEGIN,
   GET_ORDERS_SUCCESS,
   GET_ORDERS_ERROR,
 } from '../../constants/OrderConstants';
-import useAuth from '../../../hooks/useAuth/useAuth';
+import useAuth from '../../hooks/useAuth/useAuth';
 import { useCartContext } from '../../contexts/CartContext/CartContext';
 import { toast } from 'react-toastify';
 import axios from 'axios';

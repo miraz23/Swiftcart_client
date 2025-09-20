@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Wrapper from './styles';
 import { useCartContext } from '../../contexts/CartContext/CartContext';
 import { Link } from 'react-router-dom';
-import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
+import Breadcrumbs from '../../components/Shared/Breadcrumbs/Breadcrumbs';
 import CartContent from '../../components/CartContent/CartContent';
 
 const CartPage = () => {
