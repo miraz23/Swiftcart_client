@@ -6,6 +6,7 @@ import useAuth from "../../hooks/useAuth/useAuth";
 import { toast, Bounce } from "react-toastify";
 import useAxios from "../../hooks/useAxios/useAxios";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const Login = () => {
     const { googleLogin, loginUser, setUser } = useAuth();
@@ -72,7 +73,7 @@ const Login = () => {
     };
 
     return (
-        <div className="min-h-screen bg-white flex items-center justify-center p-4">
+        <div className="flex items-center justify-center p-30">
             <Helmet>
                 <title>Swift Cart | Login</title>
             </Helmet>
@@ -127,6 +128,11 @@ const Login = () => {
                                     </button>
                                 </div>
                                 {errors.password && <p className="text-red-500 text-sm">{errors.password.message}</p>}
+                                <div className='links'>
+                                  <Link to='/forgot-password' className='link'>
+                                    Forgot password?
+                                  </Link>
+                                </div>
                             </div>
 
                             {/* Submit Button */}

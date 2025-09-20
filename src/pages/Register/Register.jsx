@@ -108,7 +108,7 @@ const Register = () => {
           <Helmet>
             <title>Swift Cart | Register</title>
           </Helmet>
-          <div className="min-h-screen bg-white flex items-center justify-center p-4">
+          <div className="bg-white flex items-center justify-center p-30">
             <div className="w-full max-w-11/12 flex flex-col-reverse justify-items-center">
                 {/* Registration Form */}
                 <div className="w-full max-w-md mx-auto">
