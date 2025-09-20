@@ -2,7 +2,7 @@ import React from 'react';
 import NavContainer from './styles';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import CartButtons from '../../CartButtons';
+import CartButtons from '../../CartButtons/CartButtons';
 import useAuth from '../../../hooks/useAuth/useAuth';
 import { useProductsContext } from '../../../contexts/ProductsContext/ProductsContext';
 
