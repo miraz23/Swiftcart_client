@@ -2,12 +2,10 @@ import React from 'react';
 
 const Loader = () => {
     return (
-        <div>
-            <div className='flex justify-center items-center min-h-screen'>
-                <span className="text-blue-800 loading loading-dots loading-xl"></span>
-            </div>
+        <div className='section sc section-center'>
+            <span className='loading'></span>
         </div>
     );
-};
+}; //--clr-primary-5: hsl(22, 31%, 52%);
 
 export default Loader;

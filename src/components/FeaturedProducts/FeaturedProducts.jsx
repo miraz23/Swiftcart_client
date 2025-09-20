@@ -2,8 +2,8 @@ import React from 'react';
 import { useProductsContext } from '../../contexts/ProductsContext/ProductsContext';
 import { Link } from 'react-router-dom';
 import Wrapper from './styles';
-import Error from '../Error/Error';
-import Loading from '../Loading/Loading';
+import Loader from '../Shared/Loader/Loader';
+import Error from '../Shared/Error/Error';
 import Product from '../Product/Product';
 
 const FeaturedProducts = () => {
@@ -14,7 +14,7 @@ const FeaturedProducts = () => {
   } = useProductsContext();
 
   if (loading) {
-    return <Loading />;
+    return <Loader />;
   }
 
   if (error) {
