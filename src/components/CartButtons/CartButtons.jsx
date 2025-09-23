@@ -26,13 +26,12 @@ const CartButtons = () => {
           Login <FaUserPlus />
         </Link>
       ) : (
-        // <Link to='/profile' className='profile-btn' onClick={closeSidebar}>
-        //   <img
-        //     src={currentUser.photoURL || default_profile_image}
-        //     alt='profile'
-        //   />
-        // </Link>
-        <h3>Profile</h3>
+        <Link to='/profile' className='profile-btn' onClick={closeSidebar}>
+          <img
+            src={currentUser.photoURL || '/default.png'}
+            alt='profile'
+          />
+        </Link>
       )}
     </Wrapper>
   );

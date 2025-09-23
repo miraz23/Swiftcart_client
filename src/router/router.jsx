@@ -12,6 +12,9 @@ import Cart from '../pages/Cart/Cart'
 import Products from '../pages/Products/Products'
 import Checkout from '../pages/Checkout/Checkout'
 import Orders from '../pages/Orders/Orders'
+import QuickView from '../pages/QuickView/QuickView'
+import Profile from '../pages/Profile/Profile'
+import PrivateRoutes from '../routes/PrivateRoutes/PrivateRoutes'
 
 export const router = createBrowserRouter([
     {
@@ -44,6 +47,10 @@ export const router = createBrowserRouter([
               Component: Products
             },
             {
+              path: "products/:id",
+              Component: QuickView
+            },
+            {
               path: "about",
               Component: About
             },
@@ -53,11 +60,27 @@ export const router = createBrowserRouter([
             },
             {
               path: "checkout",
-              Component: Checkout
+              element: (
+                <PrivateRoutes>
+                  <Checkout />
+                </PrivateRoutes>
+              )
             },
             {
               path: "orders",
-              Component: Orders
+              element: (
+                <PrivateRoutes>
+                  <Orders />
+                </PrivateRoutes>
+              )
+            },
+            {
+              path: "profile",
+              element: (
+                <PrivateRoutes>
+                  <Profile />
+                </PrivateRoutes>
+              )
             }
         ]
     }
