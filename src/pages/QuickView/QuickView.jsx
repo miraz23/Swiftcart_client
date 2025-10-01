@@ -101,7 +101,7 @@ const QuickView = () => {
               <AddToCart className='cart-buttons' product={product} />
             )}
             <hr />
-            <ReviewModal product={product} />
+            <div className='sc'><ReviewModal product={product} /></div>
             <section className='reviews'>
               <h3>Reviews</h3>
               {reviews.length < 1 && (

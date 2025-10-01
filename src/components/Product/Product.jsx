@@ -13,7 +13,7 @@ const formatPrice = (number) => {
 
 const Product = ({ image, name, price, id }) => {
   return (
-    <Wrapper className='sc'>
+    <Wrapper>
       <div className='container'>
         <img src={image} alt='main' />
         <Link to={`/products/${id}`} className='link'>

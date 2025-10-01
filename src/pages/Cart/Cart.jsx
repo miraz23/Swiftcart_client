@@ -26,7 +26,7 @@ const CartPage = () => {
   }
 
   return (
-    <main>
+    <main className='sc'>
       <Breadcrumbs title='cart' />
       <Wrapper className='page'>
         <CartContent />

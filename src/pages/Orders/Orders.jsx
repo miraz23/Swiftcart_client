@@ -40,7 +40,7 @@ const Orders = () => {
   }
 
   return (
-    <main>
+    <main className='sc'>
       <Breadcrumbs title='orders' />
       <Wrapper className='page'>
         {orders.map((order) => {

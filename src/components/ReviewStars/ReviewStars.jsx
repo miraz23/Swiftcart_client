@@ -20,7 +20,7 @@ function ReviewStars({ stars, updateStars = () => {} }) {
 
   return (
     <Wrapper className='sc'>
-      <div className='stars'>{tempStars}</div>
+      <div className='stars flex'>{tempStars}</div>
     </Wrapper>
   );
 }

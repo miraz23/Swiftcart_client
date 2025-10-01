@@ -41,6 +41,7 @@ const CheckoutForm = () => {
   const elements = useElements();
 
   const cardStyle = {
+    hidePostalCode: true,
     style: {
       base: {
         color: '#32325d',

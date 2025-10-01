@@ -55,7 +55,7 @@ function ReviewModal({ product }) {
       <button className='btn' onClick={onOpen}>
         review product
       </button>
-      <div className={`${isOpen ? 'modal' : 'modal hide'}`}>
+      <div className={`${isOpen ? 'review-modal' : 'review-modal hidden'}`}>
         <div className='form'>
           <ReviewStars stars={stars} updateStars={updateStars} />
           <textarea

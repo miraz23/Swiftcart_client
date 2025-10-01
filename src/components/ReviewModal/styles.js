@@ -3,11 +3,8 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
   margin-top: 1rem;
   margin-bottom: 2rem;
-  .modal {
-  }
-  .hide {
-    display: none;
-  }
+  .review-modal {}
+  .hidden { display: none; }
   .form {
     margin: 1rem 0;
     .input {

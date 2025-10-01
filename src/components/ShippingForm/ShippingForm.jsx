@@ -6,9 +6,9 @@ import { useOrderContext } from '../../contexts/OrderContext/OrderContext';
 import { useCartContext } from '../../contexts/CartContext/CartContext';
 import { Country, State, City } from 'country-state-city';
 
-const countries = [Country.getCountryByCode('IN')];
-const states = State.getStatesOfCountry('IN');
-const cities = City.getCitiesOfCountry('IN');
+const countries = [Country.getCountryByCode('BD')];
+const states = State.getStatesOfCountry('BD');
+const cities = City.getCitiesOfCountry('BD');
 
 function ShippingForm({ confirmShipping }) {
   const {
@@ -23,13 +23,19 @@ function ShippingForm({ confirmShipping }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const zipRegex = new RegExp('^[1-9][0-9]{5}$');
+    // Bangladesh uses 4-digit postal codes (e.g., 4100)
+    const zipRegex = new RegExp('^[1-9][0-9]{3}$');
 
     if (!name) {
       return toast.error('Enter your Name');
     }
-    if (!phone_number || !/^\d{10}$/.test(phone_number)) {
-      return toast.error('Enter your phone number');
+    // Accept international numbers in E.164 format (e.g., +8801880602693) or digits-only 10-15 length
+    const normalizedPhone = String(phone_number || '')
+      .trim()
+      .replace(/[ \-()]/g, '');
+    const phoneRegex = /^\+?[1-9]\d{9,14}$/;
+    if (!normalizedPhone || !phoneRegex.test(normalizedPhone)) {
+      return toast.error('Enter a valid phone number');
     }
     if (!line1) {
       return toast.error('Enter your Address');
@@ -87,10 +93,10 @@ function ShippingForm({ confirmShipping }) {
           {/* phone */}
           <div className='form-control'>
             <input
-              type='number'
+              type='tel'
               name='phone_number'
               className='input'
-              placeholder='Phone number'
+              placeholder='Phone number (e.g., +8801880602693)'
               value={phone_number}
               onChange={updateShipping}
             />
