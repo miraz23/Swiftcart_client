@@ -1,8 +1,10 @@
 import axios from 'axios'
 import React from 'react'
 
+const apiBaseUrl = import.meta.env.VITE_API_URL ?? 'https://swiftcartbd-server.vercel.app/'
+
 const axiosInstance = axios.create({
-    baseURL: `http://localhost:5173/`
+    baseURL: apiBaseUrl
 })
 
 const useAxios = () => {

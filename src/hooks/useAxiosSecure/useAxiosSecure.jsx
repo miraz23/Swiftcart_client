@@ -1,9 +1,11 @@
 import axios from 'axios'
 import useAuth from '../useAuth/useAuth';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
+
+const apiBaseUrl = import.meta.env.VITE_API_URL ?? 'https://swiftcartbd-server.vercel.app/'
 
 const axiosSecure = axios.create({
-    baseURL: `http://localhost:5173/`
+    baseURL: apiBaseUrl
 })
 
 const useAxiosSecure = () => {
@@ -13,7 +15,7 @@ const useAxiosSecure = () => {
     axiosSecure.interceptors.request.use(
         (config) => {
             if(user?.accessToken){
-                config.headers.authrization = `Bearer $(user.accessToken)`
+                config.headers.Authorization = `Bearer ${user.accessToken}`
             }
             return config
         },
