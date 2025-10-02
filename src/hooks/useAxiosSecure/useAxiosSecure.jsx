@@ -2,7 +2,7 @@ import axios from 'axios'
 import useAuth from '../useAuth/useAuth';
 import { useNavigate } from 'react-router-dom';
 
-const apiBaseUrl = import.meta.env.VITE_API_URL ?? 'https://swiftcartbd-server.vercel.app/'
+const apiBaseUrl = import.meta.env.VITE_API_URL ?? 'https://swiftcartbd-server.vercel.app'
 
 const axiosSecure = axios.create({
     baseURL: apiBaseUrl
