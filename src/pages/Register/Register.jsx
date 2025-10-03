@@ -75,7 +75,7 @@ const Register = () => {
         lastLogin: new Date().toISOString()
       }
 
-      await axiosInstance.post("users", userInfo)
+      await axiosInstance.post("/api/users", userInfo)
 
       toast.success("Registration successful.", {transition: Bounce})
       navigate(location.state || "/")
@@ -95,7 +95,7 @@ const Register = () => {
         createdAt: new Date().toISOString(),
         lastLogin: new Date().toISOString()
       }
-      await axiosInstance.post("users", userInfo);
+      await axiosInstance.post("/api/users", userInfo);
       toast.success("Registration successful!", { transition: Bounce });
       navigate(location.state || "/");
     }catch (error) {

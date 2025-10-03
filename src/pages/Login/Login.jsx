@@ -40,7 +40,7 @@ const Login = () => {
                 lastLogin: new Date().toISOString(),
             };
 
-            await axiosInstance.post("users", userInfo);
+            await axiosInstance.post("/api/users", userInfo);
 
             toast.success("Login successful!", { transition: Bounce });
             navigate(location.state || "/");
@@ -63,7 +63,7 @@ const Login = () => {
               lastLogin: new Date().toISOString(),
             };
 
-            await axiosInstance.post("users", userInfo);
+            await axiosInstance.post("/api/users", userInfo);
 
             toast.success("Login successful!", { transition: Bounce });
             navigate(location.state || "/");
