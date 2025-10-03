@@ -28,7 +28,7 @@ const Orders = () => {
 
   if (orders.length < 1) {
     return (
-      <Wrapper className='page-100'>
+      <Wrapper className='sc h-[calc(100vh-19rem)] flex flex-col items-center justify-center'>
         <div className='empty'>
           <h2>You have no orders</h2>
           <Link to='/products' className='btn'>
