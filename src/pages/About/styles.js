@@ -10,6 +10,7 @@ const Wrapper = styled.section`
     object-fit: cover;
   }
   p {
+  font-size: 1.2rem;
     line-height: 2;
     max-width: 45em;
     margin: 0 auto;

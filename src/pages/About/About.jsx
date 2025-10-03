@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Wrapper from './styles';
 import Breadcrumbs from '../../components/Shared/Breadcrumbs/Breadcrumbs';
-import aboutImg from '../../assets/about.png';
+import aboutImg from '../../assets/about.jpg';
 
 const About = () => {
   useEffect(() => {
@@ -13,9 +13,9 @@ const About = () => {
       <Breadcrumbs title='about' />
       <Wrapper className='page section section-center'>
         <img src={aboutImg} alt='pic' />
-        <article>
+        <article className='flex flex-col justify-center'>
           <div className='title'>
-            <h2>My Story</h2>
+            <h2>Our Story</h2>
             <div className='underline'></div>
           </div>
           <p>
